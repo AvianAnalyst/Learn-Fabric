@@ -1,6 +1,6 @@
 package com.avian.learnfabric.block.custom
 
-import com.avian.learnfabric.item.ModItems
+import com.avian.learnfabric.util.ModTags
 import net.minecraft.block.Block
 import net.minecraft.block.BlockState
 import net.minecraft.entity.Entity
@@ -32,11 +32,16 @@ class MagicBlock(settings: Settings) : Block(settings) {
 
     override fun onSteppedOn(world: World?, pos: BlockPos?, state: BlockState?, item: Entity?) {
         if (item is ItemEntity) {
-            if (item.stack.item == ModItems.RAW_PINK_GARNET) {
+            if (isValidItem(item.stack)) {
                 item.stack = ItemStack(Items.DIAMOND, item.stack.count)
             }
         }
         super.onSteppedOn(world, pos, state, item)
+    }
+
+    private fun isValidItem(stack: ItemStack): Boolean {
+//        return false
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS)
     }
 
     override fun appendTooltip(
