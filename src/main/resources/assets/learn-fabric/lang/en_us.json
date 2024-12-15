@@ -1,12 +1,12 @@
 {
   "item.learn-fabric.pink_garnet": "Pink Garnet",
   "item.learn-fabric.raw_pink_garnet": "Raw Pink Garnet",
-
+  "item.learn-fabric.chisel": "Chisel of Transformation",
   "block.learn-fabric.pink_garnet_block": "Block of Pink Garnet",
   "block.learn-fabric.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.learn-fabric.pink_garnet_ore": "Pink Garnet Ore",
-  "block.learn-fabric.pink_garnet_deepslate_ore": "Pink Garnet Deeslate Ore",
-
+  "block.learn-fabric.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
   "itemgroup.learn-fabric.pink_garnet_blocks": "Pink Garnet Blocks",
-  "itemgroup.learn-fabric.pink_garnet_items": "Pink Garnet Items"
+  "itemgroup.learn-fabric.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.learn-fabric.custom_tools": "Custom tools"
 }
