@@ -5,7 +5,6 @@
   "item.learn-fabric.cauliflower": "Cauliflower",
   "item.learn-fabric.starlight_ashes": "Starlight Ashes",
   "block.learn-fabric.magic_block": "Magic Block of Transformation",
-  "itemgroup.learn-fabric.magic_block.tooltip": "This block is super §bmagical§r",
   "block.learn-fabric.pink_garnet_block": "Block of Pink Garnet",
   "block.learn-fabric.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.learn-fabric.pink_garnet_ore": "Pink Garnet Ore",
@@ -14,5 +13,8 @@
   "itemgroup.learn-fabric.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.learn-fabric.custom_tools": "Custom Tools",
   "itemgroup.learn-fabric.custom_foods": "Custom Foods",
-  "itemgroup.learn-fabric.custom_fuels": "Custom Fuels"
+  "itemgroup.learn-fabric.custom_fuels": "Custom Fuels",
+  "tooltip.learn-fabric.magic_block": "This block is super §bmagical§r",
+  "tooltip.learn-fabric.chisel.shift": "This chisel can §btransform§r things ",
+  "tooltip.learn-fabric.chisel": "Press shift for more info"
 }

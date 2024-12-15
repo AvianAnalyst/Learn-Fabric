@@ -45,7 +45,7 @@ class MagicBlock(settings: Settings) : Block(settings) {
         tooltip: MutableList<Text>?,
         options: TooltipType?
     ) {
-        tooltip?.add(Text.translatable("itemgroup.learn-fabric.magic_block.tooltip"))
+        tooltip?.add(Text.translatable("tooltip.learn-fabric.magic_block"))
         super.appendTooltip(stack, context, tooltip, options)
     }
 }

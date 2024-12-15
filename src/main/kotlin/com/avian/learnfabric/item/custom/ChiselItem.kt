@@ -1,14 +1,18 @@
 package com.avian.learnfabric.item.custom
 
+import com.avian.learnfabric.Learnfabric
 import com.avian.learnfabric.block.ModBlocks
 import net.minecraft.block.Blocks
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.Item
+import net.minecraft.item.ItemStack
 import net.minecraft.item.ItemUsageContext
+import net.minecraft.item.tooltip.TooltipType
 import net.minecraft.server.network.ServerPlayerEntity
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvents
+import net.minecraft.text.Text
 import net.minecraft.util.ActionResult
 
 
@@ -42,5 +46,19 @@ class ChiselItem(settings: Settings) : Item(settings) {
         }
 
         return super.useOnBlock(context)
+    }
+
+    override fun appendTooltip(
+        stack: ItemStack?,
+        context: TooltipContext?,
+        tooltip: MutableList<Text>?,
+        type: TooltipType?
+    ) {
+        if (Learnfabric.shiftChecker?.checkShift() == true) {
+            tooltip?.add(Text.translatable("tooltip.learn-fabric.chisel.shift"))
+        } else {
+            tooltip?.add(Text.translatable("tooltip.learn-fabric.chisel"))
+        }
+        super.appendTooltip(stack, context, tooltip, type)
     }
 }
