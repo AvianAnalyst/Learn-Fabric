@@ -3,7 +3,6 @@ package com.avian.learnfabric
 import com.avian.learnfabric.Learnfabric.MOD_ID
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.block.AbstractBlock
-import net.minecraft.block.AbstractBlock.Settings
 import net.minecraft.block.Block
 import net.minecraft.block.Blocks
 import net.minecraft.block.ExperienceDroppingBlock
@@ -40,12 +39,13 @@ object ModBlocks {
     }
 
     val PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", ::Block) {
-        strength(1f)
+        strength(4f)
         sounds(BlockSoundGroup.AMETHYST_BLOCK)
+        requiresTool()
     }
 
     val RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block", ::Block) {
-        strength(5.0F, 6.0F)
+        strength(3F)
         requiresTool()
     }
 
@@ -54,11 +54,11 @@ object ModBlocks {
         requiresTool()
     }
     val PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore", ::PinkGarnetDeepslateOre) {
-        strength(5.0F)
+        strength(4F)
         requiresTool()
         sounds(BlockSoundGroup.DEEPSLATE)
     }
 }
 
-class PinkGarnetOre (settings: Settings): ExperienceDroppingBlock(UniformIntProvider.create(2, 3), settings)
-class PinkGarnetDeepslateOre (settings: Settings): ExperienceDroppingBlock(UniformIntProvider.create(3, 5), settings)
+class PinkGarnetOre(settings: Settings) : ExperienceDroppingBlock(UniformIntProvider.create(2, 5), settings)
+class PinkGarnetDeepslateOre(settings: Settings) : ExperienceDroppingBlock(UniformIntProvider.create(3, 6), settings)
