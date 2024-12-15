@@ -35,14 +35,19 @@ object ModItems {
             entries.add(PINK_GARNET)
             entries.add(RAW_PINK_GARNET)
         }
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register { entries ->
+            entries.add(CAULIFLOWER)
+        }
     }
 
     val PINK_GARNET = register("pink_garnet", ::Item)
-
-
     val RAW_PINK_GARNET = register("raw_pink_garnet", ::Item)
 
     val CHISEL = register("chisel", ::ChiselItem) {
         maxDamage(32)
+    }
+
+    val CAULIFLOWER = register("cauliflower", ::Item) {
+        food(ModFoodComponents.CAULIFLOWER, ModConsumableComponents.CAULIFLOWER)
     }
 }

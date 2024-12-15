@@ -40,6 +40,18 @@ object ModItemGroups {
             .build()
     )
 
+    val CUSTOM_FOODS: ItemGroup = Registry.register(
+        Registries.ITEM_GROUP,
+        Identifier.of(Learnfabric.MOD_ID, "custom_foods"),
+        FabricItemGroup.builder()
+            .icon { ItemStack(ModItems.CAULIFLOWER) }
+            .displayName(Text.translatable("itemgroup.learn-fabric.custom_foods"))
+            .entries { displayContext, entries ->
+                entries.add(ModItems.CAULIFLOWER)
+            }
+            .build()
+    )
+
     val PINK_GARNET_BLOCKS_GROUP: ItemGroup = Registry.register(
         Registries.ITEM_GROUP,
         Identifier.of(Learnfabric.MOD_ID, "pink_garnet_blocks"),
@@ -52,6 +64,7 @@ object ModItemGroups {
 
                 entries.add(ModBlocks.PINK_GARNET_ORE)
                 entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE)
+                entries.add(ModBlocks.MAGIC_BLOCK)
             }
             .build()
     )

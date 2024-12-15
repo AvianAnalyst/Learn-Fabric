@@ -1,4 +1,38 @@
 package com.avian.learnfabric.block.custom
 
-class MagicBlock {
+import com.avian.learnfabric.item.ModItems
+import net.minecraft.block.Block
+import net.minecraft.block.BlockState
+import net.minecraft.entity.Entity
+import net.minecraft.entity.ItemEntity
+import net.minecraft.entity.player.PlayerEntity
+import net.minecraft.item.ItemStack
+import net.minecraft.item.Items
+import net.minecraft.sound.SoundCategory
+import net.minecraft.sound.SoundEvents
+import net.minecraft.util.ActionResult
+import net.minecraft.util.hit.BlockHitResult
+import net.minecraft.util.math.BlockPos
+import net.minecraft.world.World
+
+class MagicBlock(settings: Settings) : Block(settings) {
+    override fun onUse(
+        state: BlockState?,
+        world: World?,
+        pos: BlockPos?,
+        player: PlayerEntity?,
+        hit: BlockHitResult?
+    ): ActionResult {
+        world?.playSound(player, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1.0f, 1.0f)
+        return ActionResult.SUCCESS
+    }
+
+    override fun onSteppedOn(world: World?, pos: BlockPos?, state: BlockState?, item: Entity?) {
+        if (item is ItemEntity) {
+            if (item.stack.item == ModItems.RAW_PINK_GARNET) {
+                item.stack = ItemStack(Items.DIAMOND, item.stack.count)
+            }
+        }
+        super.onSteppedOn(world, pos, state, item)
+    }
 }

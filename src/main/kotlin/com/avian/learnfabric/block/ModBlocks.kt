@@ -1,6 +1,7 @@
 package com.avian.learnfabric.block
 
 import com.avian.learnfabric.Learnfabric.MOD_ID
+import com.avian.learnfabric.block.custom.MagicBlock
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.block.AbstractBlock
 import net.minecraft.block.Block
@@ -35,6 +36,7 @@ object ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register { entries ->
             entries.add(PINK_GARNET_BLOCK)
             entries.add(RAW_PINK_GARNET_BLOCK)
+            entries.add(MAGIC_BLOCK)
         }
     }
 
@@ -57,6 +59,10 @@ object ModBlocks {
         strength(4F)
         requiresTool()
         sounds(BlockSoundGroup.DEEPSLATE)
+    }
+    val MAGIC_BLOCK = registerBlock("magic_block", ::MagicBlock) {
+        strength(1f)
+        requiresTool()
     }
 }
 
