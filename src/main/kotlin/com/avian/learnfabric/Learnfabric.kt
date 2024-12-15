@@ -4,6 +4,7 @@ import com.avian.learnfabric.block.ModBlocks
 import com.avian.learnfabric.item.ModItemGroups
 import com.avian.learnfabric.item.ModItems
 import net.fabricmc.api.ModInitializer
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents
 import org.slf4j.LoggerFactory
 
 
@@ -19,5 +20,9 @@ object Learnfabric : ModInitializer {
         ModItemGroups.initialize()
         ModItems.initialize()
         ModBlocks.initialize()
+
+        FuelRegistryEvents.BUILD.register { builder, context ->
+            builder.add(ModItems.STARLIGHT_ASHES, 600)
+        }
     }
 }

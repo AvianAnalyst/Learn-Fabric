@@ -34,6 +34,7 @@ object ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register { entries ->
             entries.add(PINK_GARNET)
             entries.add(RAW_PINK_GARNET)
+            entries.add(STARLIGHT_ASHES)
         }
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register { entries ->
             entries.add(CAULIFLOWER)
@@ -50,4 +51,6 @@ object ModItems {
     val CAULIFLOWER = register("cauliflower", ::Item) {
         food(ModFoodComponents.CAULIFLOWER, ModConsumableComponents.CAULIFLOWER)
     }
+
+    val STARLIGHT_ASHES = register("starlight_ashes", ::Item)
 }

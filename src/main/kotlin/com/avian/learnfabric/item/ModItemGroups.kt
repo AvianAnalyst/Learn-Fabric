@@ -40,6 +40,18 @@ object ModItemGroups {
             .build()
     )
 
+    val CUSTOM_FUELS: ItemGroup = Registry.register(
+        Registries.ITEM_GROUP,
+        Identifier.of(Learnfabric.MOD_ID, "custom_fuels"),
+        FabricItemGroup.builder()
+            .icon { ItemStack(ModItems.STARLIGHT_ASHES) }
+            .displayName(Text.translatable("itemgroup.learn-fabric.custom_fuels"))
+            .entries { displayContext, entries ->
+                entries.add(ModItems.STARLIGHT_ASHES)
+            }
+            .build()
+    )
+
     val CUSTOM_FOODS: ItemGroup = Registry.register(
         Registries.ITEM_GROUP,
         Identifier.of(Learnfabric.MOD_ID, "custom_foods"),
