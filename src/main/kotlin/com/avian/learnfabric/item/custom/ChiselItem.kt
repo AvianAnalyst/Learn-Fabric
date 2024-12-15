@@ -1,6 +1,6 @@
 package com.avian.learnfabric.item.custom
 
-import com.avian.learnfabric.ModBlocks
+import com.avian.learnfabric.block.ModBlocks
 import net.minecraft.block.Blocks
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.Item

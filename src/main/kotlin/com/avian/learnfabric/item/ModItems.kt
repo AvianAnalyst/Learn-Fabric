@@ -28,10 +28,12 @@ object ModItems {
     }
 
     fun initialize() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register { entries ->
+            entries.add(CHISEL)
+        }
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register { entries ->
             entries.add(PINK_GARNET)
             entries.add(RAW_PINK_GARNET)
-            entries.add(CHISEL)
         }
     }
 

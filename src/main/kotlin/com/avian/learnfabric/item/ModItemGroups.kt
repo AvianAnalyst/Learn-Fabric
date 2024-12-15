@@ -1,7 +1,7 @@
 package com.avian.learnfabric.item
 
 import com.avian.learnfabric.Learnfabric
-import com.avian.learnfabric.ModBlocks
+import com.avian.learnfabric.block.ModBlocks
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
