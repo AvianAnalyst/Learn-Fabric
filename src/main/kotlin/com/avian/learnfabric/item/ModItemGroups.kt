@@ -21,9 +21,21 @@ object ModItemGroups {
         FabricItemGroup.builder()
             .icon { ItemStack(ModItems.PINK_GARNET) }
             .displayName(Text.translatable("itemgroup.learn-fabric.pink_garnet_items"))
-            .entries {displayContext, entries ->
+            .entries { displayContext, entries ->
                 entries.add(ModItems.PINK_GARNET)
                 entries.add(ModItems.RAW_PINK_GARNET)
+            }
+            .build()
+    )
+
+    val CUSTOM_TOOLS: ItemGroup = Registry.register(
+        Registries.ITEM_GROUP,
+        Identifier.of(Learnfabric.MOD_ID, "custom_tools"),
+        FabricItemGroup.builder()
+            .icon { ItemStack(ModItems.CHISEL) }
+            .displayName(Text.translatable("itemgroup.learn-fabric.custom_tools"))
+            .entries { displayContext, entries ->
+                entries.add(ModItems.CHISEL)
             }
             .build()
     )
@@ -34,7 +46,7 @@ object ModItemGroups {
         FabricItemGroup.builder()
             .icon { ItemStack(ModBlocks.PINK_GARNET_BLOCK) }
             .displayName(Text.translatable("itemgroup.learn-fabric.pink_garnet_blocks"))
-            .entries {displayContext, entries ->
+            .entries { displayContext, entries ->
                 entries.add(ModBlocks.PINK_GARNET_BLOCK)
                 entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK)
 
@@ -43,5 +55,6 @@ object ModItemGroups {
             }
             .build()
     )
+
     fun initialize() {}
 }
