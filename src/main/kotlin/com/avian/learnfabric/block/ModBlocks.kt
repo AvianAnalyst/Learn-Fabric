@@ -1,4 +1,4 @@
-package com.avian.learnfabric
+package com.avian.learnfabric.block
 
 import com.avian.learnfabric.Learnfabric.MOD_ID
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
