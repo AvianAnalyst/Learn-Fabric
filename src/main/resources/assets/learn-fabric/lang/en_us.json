@@ -5,6 +5,7 @@
   "item.learn-fabric.cauliflower": "Cauliflower",
   "item.learn-fabric.starlight_ashes": "Starlight Ashes",
   "block.learn-fabric.magic_block": "Magic Block of Transformation",
+  "itemgroup.learn-fabric.magic_block.tooltip": "This block is super §bmagical§r",
   "block.learn-fabric.pink_garnet_block": "Block of Pink Garnet",
   "block.learn-fabric.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.learn-fabric.pink_garnet_ore": "Pink Garnet Ore",
