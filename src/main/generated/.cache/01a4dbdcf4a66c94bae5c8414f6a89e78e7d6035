@@ -1,0 +1,3 @@
+// 1.21.4	-999999999-01-01T00:00:00	learn-fabric/Tags for minecraft:block
+85092c25984f3cb3507e30b06bd40073bbe728ed data/minecraft/tags/block/mineable/pickaxe.json
+096c44ad927dd6d47418cb6e404f4ad1be7b4e94 data/minecraft/tags/block/needs_iron_tool.json

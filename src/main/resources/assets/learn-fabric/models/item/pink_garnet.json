@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "learn-fabric:item/pink_garnet"
-  }
-}
