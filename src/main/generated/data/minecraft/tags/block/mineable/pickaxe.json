@@ -4,6 +4,15 @@
     "learn-fabric:raw_pink_garnet_block",
     "learn-fabric:pink_garnet_ore",
     "learn-fabric:pink_garnet_deepslate_ore",
-    "learn-fabric:magic_block"
+    "learn-fabric:magic_block",
+    "learn-fabric:pink_garnet_door",
+    "learn-fabric:pink_garnet_slab",
+    "learn-fabric:pink_garnet_wall",
+    "learn-fabric:pink_garnet_stairs",
+    "learn-fabric:pink_garnet_trap_door",
+    "learn-fabric:pink_garnet_pressure_plate",
+    "learn-fabric:pink_garnet_fence",
+    "learn-fabric:pink_garnet_fence_gate",
+    "learn-fabric:pink_garnet_button"
   ]
 }

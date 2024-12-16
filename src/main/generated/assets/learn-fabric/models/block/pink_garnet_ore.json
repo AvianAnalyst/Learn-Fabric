@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "learn-fabric:block/pink_garnet_ore"
+  }
+}

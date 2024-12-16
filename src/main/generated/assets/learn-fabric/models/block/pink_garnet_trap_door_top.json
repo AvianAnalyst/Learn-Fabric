@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_top",
+  "textures": {
+    "texture": "learn-fabric:block/pink_garnet_trap_door"
+  }
+}

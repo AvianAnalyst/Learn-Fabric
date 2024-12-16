@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "learn-fabric:block/pink_garnet_block"
+  }
+}

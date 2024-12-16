@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "learn-fabric:block/pink_garnet_block"
+  }
+}

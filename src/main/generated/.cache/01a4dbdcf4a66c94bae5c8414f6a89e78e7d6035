@@ -1,3 +1,7 @@
 // 1.21.4	-999999999-01-01T00:00:00	learn-fabric/Tags for minecraft:block
-85092c25984f3cb3507e30b06bd40073bbe728ed data/minecraft/tags/block/mineable/pickaxe.json
+ef49b53cfb6298500722b0bafee5d09b8f7d88fe data/minecraft/tags/block/doors.json
+b2422009dc833566dda4a9d4099ae3dfde018dc8 data/minecraft/tags/block/fence_gates.json
+b2422009dc833566dda4a9d4099ae3dfde018dc8 data/minecraft/tags/block/fences.json
+2bb588baaf7f62e864a3b90e798b4ebe4ce0bfea data/minecraft/tags/block/mineable/pickaxe.json
 096c44ad927dd6d47418cb6e404f4ad1be7b4e94 data/minecraft/tags/block/needs_iron_tool.json
+6bb7d69024f3bd668b0a2f0b23d90406b29b6423 data/minecraft/tags/block/walls.json
