@@ -1,6 +1,7 @@
 package com.avian.learnfabric
 
 import com.avian.learnfabric.block.ModBlocks
+import com.avian.learnfabric.component.ModDataComponentTypes
 import com.avian.learnfabric.item.ModItemGroups
 import com.avian.learnfabric.item.ModItems
 import com.avian.learnfabric.util.ShiftChecker
@@ -22,6 +23,7 @@ object Learnfabric : ModInitializer {
         ModItemGroups.initialize()
         ModItems.initialize()
         ModBlocks.initialize()
+        ModDataComponentTypes.initialize()
 
         FuelRegistryEvents.BUILD.register { builder, context ->
             builder.add(ModItems.STARLIGHT_ASHES, 600)

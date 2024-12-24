@@ -42,6 +42,8 @@ class ModLootTableProvider(
             ModBlocks.PINK_GARNET_DEEPSLATE_ORE,
             multipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, ModItems.RAW_PINK_GARNET, 3, 7)
         )
+
+        addDrop(ModBlocks.PINK_GARNET_LAMP)
     }
 
 

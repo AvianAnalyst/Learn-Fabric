@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": "learn-fabric:pink_garnet",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "GG ",
+    "GS ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "learn-fabric:pink_garnet_axe"
+  }
+}

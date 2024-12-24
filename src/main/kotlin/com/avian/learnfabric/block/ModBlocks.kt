@@ -2,6 +2,7 @@ package com.avian.learnfabric.block
 
 import com.avian.learnfabric.Learnfabric.MOD_ID
 import com.avian.learnfabric.block.custom.MagicBlock
+import com.avian.learnfabric.block.custom.PinkGarnetLampBlock
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.block.*
 import net.minecraft.item.ItemGroups
@@ -103,6 +104,14 @@ object ModBlocks {
         strength(2f)
         requiresTool()
         nonOpaque()
+    }
+
+    val PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp", ::PinkGarnetLampBlock) {
+        strength(2f)
+        requiresTool()
+        luminance { state ->
+            if (state.get(PinkGarnetLampBlock.CLICKED)) 15 else 0
+        }
     }
 }
 

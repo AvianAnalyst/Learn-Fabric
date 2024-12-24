@@ -1,2 +1,8 @@
 // 1.21.4	-999999999-01-01T00:00:00	learn-fabric/Tags for minecraft:item
+cf2247820fd9ea18a310a4a67c8881abb8fca740 data/learn-fabric/tags/item/pink_garnet_tool_materials.json
 4425d07e1651023fe2a23071d5f7bf98a7661460 data/learn-fabric/tags/item/transformable_items.json
+236dce16876a8b30227bda0dacd2e640de38b40d data/minecraft/tags/item/axes.json
+606bb0d06f69d16333f7d6e599481e903d3b5eb0 data/minecraft/tags/item/hoes.json
+617cc94ac40521434004308ed9e8a6f6c2b7110d data/minecraft/tags/item/pickaxes.json
+4bc419749dfe53b0f331146e2d4a894137a04f08 data/minecraft/tags/item/shovels.json
+4e267c192f3b7731fd2d5ab475f2e6a0187a34e1 data/minecraft/tags/item/swords.json

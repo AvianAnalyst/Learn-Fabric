@@ -1,12 +1,11 @@
 package com.avian.learnfabric.datagen
 
 import com.avian.learnfabric.block.ModBlocks
+import com.avian.learnfabric.block.custom.PinkGarnetLampBlock
 import com.avian.learnfabric.item.ModItems
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
-import net.minecraft.client.data.BlockStateModelGenerator
-import net.minecraft.client.data.ItemModelGenerator
-import net.minecraft.client.data.Models
+import net.minecraft.client.data.*
 
 class ModModelProvider(output: FabricDataOutput?) : FabricModelProvider(output) {
     override fun generateBlockStateModels(blockStateModelGenerator: BlockStateModelGenerator) {
@@ -26,6 +25,23 @@ class ModModelProvider(output: FabricDataOutput?) : FabricModelProvider(output) 
 
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR)
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAP_DOOR)
+
+        val lampOffIdentifier =
+            TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GARNET_LAMP, blockStateModelGenerator.modelCollector)
+        val lampOnIdentifier =
+            blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all)
+        blockStateModelGenerator.blockStateCollector.accept(
+            VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
+                .coordinate(
+                    BlockStateModelGenerator.createBooleanModelMap(
+                        PinkGarnetLampBlock.CLICKED,
+                        lampOnIdentifier,
+                        lampOffIdentifier
+                    )
+                )
+        )
+
+
     }
 
     override fun generateItemModels(itemModelGenerator: ItemModelGenerator) {
@@ -35,6 +51,12 @@ class ModModelProvider(output: FabricDataOutput?) : FabricModelProvider(output) 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED)
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED)
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED)
+
+        itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.PINK_GARNET_SWORD, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD)
 
 
     }

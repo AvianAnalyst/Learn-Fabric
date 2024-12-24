@@ -36,6 +36,11 @@ object ModItemGroups {
             .displayName(Text.translatable("itemgroup.learn-fabric.custom_tools"))
             .entries { displayContext, entries ->
                 entries.add(ModItems.CHISEL)
+                entries.add(ModItems.PINK_GARNET_AXE)
+                entries.add(ModItems.PINK_GARNET_PICKAXE)
+                entries.add(ModItems.PINK_GARNET_SWORD)
+                entries.add(ModItems.PINK_GARNET_HOE)
+                entries.add(ModItems.PINK_GARNET_SHOVEL)
             }
             .build()
     )
@@ -87,6 +92,7 @@ object ModItemGroups {
                 entries.add(ModBlocks.PINK_GARNET_FENCE)
                 entries.add(ModBlocks.PINK_GARNET_FENCE_GATE)
                 entries.add(ModBlocks.PINK_GARNET_BUTTON)
+                entries.add(ModBlocks.PINK_GARNET_LAMP)
             }
             .build()
     )
