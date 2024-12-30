@@ -57,6 +57,8 @@ class ModModelProvider(output: FabricDataOutput?) : FabricModelProvider(output) 
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD)
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD)
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.FOOTBALL, Models.HANDHELD)
+        itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD)
 
 
     }

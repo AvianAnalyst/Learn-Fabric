@@ -2,6 +2,7 @@ package com.avian.learnfabric.item
 
 import com.avian.learnfabric.Learnfabric.MOD_ID
 import com.avian.learnfabric.item.custom.ChiselItem
+import com.avian.learnfabric.item.custom.HammerItem
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.item.*
 import net.minecraft.registry.RegistryKey
@@ -28,6 +29,7 @@ object ModItems {
     fun initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register { entries ->
             entries.add(CHISEL)
+            entries.add(FOOTBALL)
         }
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register { entries ->
             entries.add(PINK_GARNET)
@@ -56,9 +58,12 @@ object ModItems {
     val PINK_GARNET_SHOVEL = register("pink_garnet_shovel", ::PinkGarnetShovel)
     val PINK_GARNET_AXE = register("pink_garnet_axe", ::PinkGarnetAxe)
     val PINK_GARNET_HOE = register("pink_garnet_hoe", ::PinkGarnetHoe)
+    val PINK_GARNET_HAMMER = register("pink_garnet_hammer", ::PinkGarnetHammer)
+    val FOOTBALL = register("footie", ::Item)
 }
 class PinkGarnetSword(settings: Settings) : SwordItem(ModToolMaterials.PINK_GARNET, 3f, -2.4f, settings)
 class PinkGarnetPickaxe(settings: Settings) : PickaxeItem(ModToolMaterials.PINK_GARNET, 1f, -2.8f, settings)
 class PinkGarnetShovel(settings: Settings) : ShovelItem(ModToolMaterials.PINK_GARNET, 1.5f, -3f, settings)
 class PinkGarnetAxe(settings: Settings) : AxeItem(ModToolMaterials.PINK_GARNET, 6f, -3.2f, settings)
 class PinkGarnetHoe(settings: Settings) : HoeItem(ModToolMaterials.PINK_GARNET, 0f, -3f, settings)
+class PinkGarnetHammer(settings: Settings): HammerItem(ModToolMaterials.PINK_GARNET, 7f, -3.4f, settings)

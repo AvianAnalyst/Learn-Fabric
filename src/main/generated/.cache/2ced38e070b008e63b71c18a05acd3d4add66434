@@ -16,6 +16,7 @@ b869a6c7de35761ded68322d64260bd37637a86f assets/learn-fabric/blockstates/pink_ga
 f0a6b54074db1f85da91b410d20e72dbdcc7ac45 assets/learn-fabric/blockstates/raw_pink_garnet_block.json
 1ce1b79b8810781e9321b6a27beb69ed24fe493e assets/learn-fabric/items/cauliflower.json
 3e59f0df79c90bf4e0b0ceddb136d15af657c2e1 assets/learn-fabric/items/chisel.json
+efc8c4c00688555c00210ad07be521a2fcff5bcf assets/learn-fabric/items/footie.json
 e9ed811901566a843d300bc44c45cad98bee3422 assets/learn-fabric/items/magic_block.json
 8e460920dece2d328b9035aae76e603b0d2e2aff assets/learn-fabric/items/pink_garnet.json
 19aa2ea71edd88bc6451e088512f2b7fa42228ee assets/learn-fabric/items/pink_garnet_axe.json
@@ -25,6 +26,7 @@ e9ed811901566a843d300bc44c45cad98bee3422 assets/learn-fabric/items/magic_block.j
 80b20deaf7762a9cddd3f6dd91e0904a6c6f7641 assets/learn-fabric/items/pink_garnet_door.json
 73dbfaa9d5d236bd0b66c53ea372cc537a109cd8 assets/learn-fabric/items/pink_garnet_fence.json
 eea81fdb7b55f71c99bf2581093d785f6df87f1c assets/learn-fabric/items/pink_garnet_fence_gate.json
+83d902b71f5abb5526e70d2e2a2b42efe710553c assets/learn-fabric/items/pink_garnet_hammer.json
 e83f4a2b586232a22466dada1a87f7613988dc15 assets/learn-fabric/items/pink_garnet_hoe.json
 22a8d9e36610b1bbdc2155e5b2e5f9306de1bce5 assets/learn-fabric/items/pink_garnet_lamp.json
 43e9ccd9178dead91158f57ac244d82671c256aa assets/learn-fabric/items/pink_garnet_ore.json
@@ -80,9 +82,11 @@ ffcc273919a32a291d12ebf35db36dabf369f8d9 assets/learn-fabric/models/block/pink_g
 de6d844e8a3bed2d015e834680a3b0e791e5c0dd assets/learn-fabric/models/block/raw_pink_garnet_block.json
 4de74b262c076106743eee2c9604f9d9d222ec62 assets/learn-fabric/models/item/cauliflower.json
 f86c1378e5f9849054b2cb375a24106bde8f5196 assets/learn-fabric/models/item/chisel.json
+8f68f795023c70e75e2d156d93c22304af2b623c assets/learn-fabric/models/item/footie.json
 a6a8ea1076de6c0419e37815277bc5849e96724e assets/learn-fabric/models/item/pink_garnet.json
 b62a3a820c1632346eac964f77192a856dd7fde6 assets/learn-fabric/models/item/pink_garnet_axe.json
 3e71177c704c89aa672430e23a98ec34ee7d633c assets/learn-fabric/models/item/pink_garnet_door.json
+d2f75b6e2798b9a8549e88bcdf7e5529a1938cbb assets/learn-fabric/models/item/pink_garnet_hammer.json
 78df5fe011e7804f61024a85dea496eee2b83102 assets/learn-fabric/models/item/pink_garnet_hoe.json
 459ecf76c177b40a843d8662d3b85f15742974ab assets/learn-fabric/models/item/pink_garnet_pickaxe.json
 ff4893f904584e9af82199c18ac00dd309cc8c36 assets/learn-fabric/models/item/pink_garnet_shovel.json

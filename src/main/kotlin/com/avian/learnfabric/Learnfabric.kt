@@ -4,8 +4,10 @@ import com.avian.learnfabric.block.ModBlocks
 import com.avian.learnfabric.component.ModDataComponentTypes
 import com.avian.learnfabric.item.ModItemGroups
 import com.avian.learnfabric.item.ModItems
+import com.avian.learnfabric.util.HammerUsageEvent
 import com.avian.learnfabric.util.ShiftChecker
 import net.fabricmc.api.ModInitializer
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents
 import org.slf4j.LoggerFactory
 
@@ -28,5 +30,7 @@ object Learnfabric : ModInitializer {
         FuelRegistryEvents.BUILD.register { builder, context ->
             builder.add(ModItems.STARLIGHT_ASHES, 600)
         }
+
+        PlayerBlockBreakEvents.BEFORE.register(HammerUsageEvent())
     }
 }

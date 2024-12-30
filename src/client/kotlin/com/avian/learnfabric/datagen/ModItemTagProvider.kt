@@ -32,5 +32,7 @@ class ModItemTagProvider(
             .add(ModItems.PINK_GARNET_HOE)
         getOrCreateTagBuilder(ItemTags.AXES)
             .add(ModItems.PINK_GARNET_AXE)
+        getOrCreateTagBuilder(ModTags.Items.HAMMERS)
+            .add(ModItems.PINK_GARNET_HAMMER)
     }
 }
