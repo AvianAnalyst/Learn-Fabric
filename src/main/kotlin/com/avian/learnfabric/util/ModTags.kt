@@ -17,6 +17,7 @@ object ModTags {
     }
 
     object Items {
+        val PINK_GARNET_REPAIR: TagKey<Item> = createTag("pink_garnet_repair")
         val HAMMERS: TagKey<Item> = createTag("hammers")
         val PINK_GARNET_TOOL_MATERIALS = createTag("pink_garnet_tool_materials")
         val TRANSFORMABLE_ITEMS = createTag("transformable_items")

@@ -2,6 +2,7 @@ package com.avian.learnfabric.datagen
 
 import com.avian.learnfabric.block.ModBlocks
 import com.avian.learnfabric.block.custom.PinkGarnetLampBlock
+import com.avian.learnfabric.item.ModArmorMaterials
 import com.avian.learnfabric.item.ModItems
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
@@ -59,7 +60,29 @@ class ModModelProvider(output: FabricDataOutput?) : FabricModelProvider(output) 
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD)
         itemModelGenerator.register(ModItems.FOOTBALL, Models.HANDHELD)
         itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD)
-
-
+        itemModelGenerator.registerArmor(
+            ModItems.PINK_GARNET_HELMET,
+            ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL_KEY,
+            "helmet",
+            false
+        )
+        itemModelGenerator.registerArmor(
+            ModItems.PINK_GARNET_CHESTPLATE,
+            ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL_KEY,
+            "chestplate",
+            false
+        )
+        itemModelGenerator.registerArmor(
+            ModItems.PINK_GARNET_LEGGINGS,
+            ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL_KEY,
+            "leggings",
+            false
+        )
+        itemModelGenerator.registerArmor(
+            ModItems.PINK_GARNET_BOOTS,
+            ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL_KEY,
+            "boots",
+            false
+        )
     }
 }

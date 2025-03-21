@@ -27,7 +27,7 @@ object Learnfabric : ModInitializer {
         ModBlocks.initialize()
         ModDataComponentTypes.initialize()
 
-        FuelRegistryEvents.BUILD.register { builder, context ->
+        FuelRegistryEvents.BUILD.register { builder, _ ->
             builder.add(ModItems.STARLIGHT_ASHES, 600)
         }
 

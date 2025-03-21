@@ -24,6 +24,10 @@ object ModItemGroups {
             .entries { displayContext, entries ->
                 entries.add(ModItems.PINK_GARNET)
                 entries.add(ModItems.RAW_PINK_GARNET)
+                entries.add(ModItems.PINK_GARNET_BOOTS)
+                entries.add(ModItems.PINK_GARNET_LEGGINGS)
+                entries.add(ModItems.PINK_GARNET_CHESTPLATE)
+                entries.add(ModItems.PINK_GARNET_HELMET)
             }
             .build()
     )
